@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/monday-hometask-ignat/static/css/main.5665de67.css",
+    "main.js": "/monday-hometask-ignat/static/js/main.41ddc7a4.js",
+    "static/js/787.66cb4309.chunk.js": "/monday-hometask-ignat/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/monday-hometask-ignat/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/monday-hometask-ignat/index.html",
+    "main.5665de67.css.map": "/monday-hometask-ignat/static/css/main.5665de67.css.map",
+    "main.41ddc7a4.js.map": "/monday-hometask-ignat/static/js/main.41ddc7a4.js.map",
+    "787.66cb4309.chunk.js.map": "/monday-hometask-ignat/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5665de67.css",
+    "static/js/main.41ddc7a4.js"
+  ]
+}
