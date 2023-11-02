@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/monday-hometask-ignat/static/css/main.a805b70c.css",
-    "main.js": "/monday-hometask-ignat/static/js/main.0ce0635f.js",
+    "main.css": "/monday-hometask-ignat/static/css/main.7420733d.css",
+    "main.js": "/monday-hometask-ignat/static/js/main.c429b012.js",
     "static/js/787.66cb4309.chunk.js": "/monday-hometask-ignat/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/monday-hometask-ignat/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/monday-hometask-ignat/index.html",
-    "main.a805b70c.css.map": "/monday-hometask-ignat/static/css/main.a805b70c.css.map",
-    "main.0ce0635f.js.map": "/monday-hometask-ignat/static/js/main.0ce0635f.js.map",
+    "static/media/checked.svg": "/monday-hometask-ignat/static/media/checked.b75ca55e8759862b4083.svg",
+    "main.7420733d.css.map": "/monday-hometask-ignat/static/css/main.7420733d.css.map",
+    "main.c429b012.js.map": "/monday-hometask-ignat/static/js/main.c429b012.js.map",
     "787.66cb4309.chunk.js.map": "/monday-hometask-ignat/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a805b70c.css",
-    "static/js/main.0ce0635f.js"
+    "static/css/main.7420733d.css",
+    "static/js/main.c429b012.js"
   ]
 }
