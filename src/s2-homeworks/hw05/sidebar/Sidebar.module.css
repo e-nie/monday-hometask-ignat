@@ -1,25 +1,150 @@
+/*.sidebar {*/
+/*    display: none*/
+/*}*/
+
+
+
 .sidebar {
+    z-index: 20;
+    position: fixed;
+    transition: 0.2s ease-in;
+
+    height: 100vh;
+    width: 317px;
+    left: -317px;
+    top: 0;
+
+    background: #fff;
 }
+/*.sidebar.open {*/
+/*    !*display: block;*!*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    background: #FFF;*/
+/*    box-shadow: 0px 1px 2px 0px rgba(29, 33, 38, 0.10), 0px 10px 40px 0px rgba(29, 33, 38, 0.13);*/
+/*    width: 317px;*/
+/*    height: 720px;*/
+/*    gap: 23px;*/
+
+/*}*/
 
 .sidebar.open {
+
+    left: 0;
+    box-shadow: 0 10px 40px rgba(29, 33, 38, 0.13),
+    0 1px 2px rgba(29, 33, 38, 0.1);
 }
+
+/*.background {*/
+/*    opacity: 0.3;*/
+/*    background: #000;*/
+/*}*/
 
 .background {
+    z-index: 10;
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    /*backdrop-filter: blur(2px);*/
+    background: rgba(0, 0, 0, 0.3);
 }
+/*.nav {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: normal;*/
+/*    gap: 45px;*/
+/*}*/
 
 .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 63px;
+    padding-left: 70px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
 }
 
+/*.nav a {*/
+/*    color: #000;*/
+/*    font-family: Montserrat;*/
+/*    font-size: 22px;*/
+/*    font-weight: 600;*/
+/*    cursor: pointer;*/
+
+/*}*/
+
+
 .nav a {
+    color: black;
+    text-decoration: none;
 }
 
 .nav a:hover {
+    color: #0080ff;
 }
 
 .nav a.active {
+    color: #0059b2;
+    text-decoration: underline;
 }
+/*.nav a:first-child {*/
+/*    color: #0059B2;*/
+/*    font-family: Montserrat;*/
+/*    font-size: 22px;*/
+/*    font-weight: 600;*/
+/*    text-decoration-line: underline;*/
+/*}*/
+
+/*.nav a:nth-child(2) {*/
+/*    color: #000;*/
+
+/*}*/
+
+/*.nav a:nth-child(2):active {*/
+/*    color: #3D6B99;*/
+
+/*}*/
+
+/*.nav a:nth-child(2):hover {*/
+/*    color: #58ACFF;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.close {*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*    margin-left: auto;*/
+
+/*    !*float: right;*!*/
+/*}*/
+
+/*.close img {*/
+/*    width: 100%;*/
+/*    height: 100%*/
+/*}*/
+
 .close {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    right: 24px;
+    top: 16px;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .close img {
+    height: 100%;
+    width: 100%;
 }
