@@ -3,12 +3,10 @@ const initState:InitialStateType = {
 }
 
 export const loadingReducer = (state = initState, action: ActionsType): InitialStateType => { // fix any
-    debugger
     switch (action.type) {
 
         case "CHANGE_LOADING":
-            debugger
-            return {
+                     return {
                 ...state, isLoading: action.isLoading
             }
 
