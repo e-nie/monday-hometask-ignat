@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/monday-hometask-ignat/static/css/main.2452ee90.css",
-    "main.js": "/monday-hometask-ignat/static/js/main.6ef3f026.js",
+    "main.css": "/monday-hometask-ignat/static/css/main.7b2a9df2.css",
+    "main.js": "/monday-hometask-ignat/static/js/main.94a13611.js",
     "static/js/787.66cb4309.chunk.js": "/monday-hometask-ignat/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/monday-hometask-ignat/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/monday-hometask-ignat/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
@@ -10,12 +10,12 @@
     "index.html": "/monday-hometask-ignat/index.html",
     "static/media/checked.svg": "/monday-hometask-ignat/static/media/checked.b75ca55e8759862b4083.svg",
     "static/media/burger.svg": "/monday-hometask-ignat/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.2452ee90.css.map": "/monday-hometask-ignat/static/css/main.2452ee90.css.map",
-    "main.6ef3f026.js.map": "/monday-hometask-ignat/static/js/main.6ef3f026.js.map",
+    "main.7b2a9df2.css.map": "/monday-hometask-ignat/static/css/main.7b2a9df2.css.map",
+    "main.94a13611.js.map": "/monday-hometask-ignat/static/js/main.94a13611.js.map",
     "787.66cb4309.chunk.js.map": "/monday-hometask-ignat/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2452ee90.css",
-    "static/js/main.6ef3f026.js"
+    "static/css/main.7b2a9df2.css",
+    "static/js/main.94a13611.js"
   ]
 }
