@@ -13,9 +13,13 @@ import {useSearchParams} from 'react-router-dom'
 * 5 - добавить HW14 в HW5/pages/JuniorPlus
 * */
 
+type ApiResponse = {
+    techs: string[]
+}
+
 const getTechs = (find: string) => {
     return axios
-        .get<{ techs: string[] }>(
+        .get<ApiResponse>(
             'https://samurai.it-incubator.io/api/3.0/homework/test2',
             {params: {find}}
         )
@@ -35,10 +39,11 @@ const HW14 = () => {
         getTechs(value)
             .then((res) => {
                 // делает студент
-
                 // сохранить пришедшие данные
-
-                //
+                if (res && res.data && res.data.techs)
+                    setTechs(res.data.techs)
+                //завершаем загрузку
+                setLoading(false)
             })
     }
 
@@ -47,10 +52,12 @@ const HW14 = () => {
         // делает студент
 
         // добавить/заменить значение в квери урла
-        // setSearchParams(
-
-        //
+        setSearchParams(
+            {find: value}
+        )
+        sendQuery(value)
     }
+
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
@@ -59,25 +66,25 @@ const HW14 = () => {
     }, [])
 
     const mappedTechs = techs.map(t => (
-        <div key={t} id={'hw14-tech-' + t} className={s.tech}>
+        <div key = {t} id = {'hw14-tech-' + t} className = {s.tech}>
             {t}
         </div>
     ))
 
     return (
-        <div id={'hw14'}>
-            <div className={s2.hwTitle}>Homework #14</div>
+        <div id = {'hw14'}>
+            <div className = {s2.hwTitle}>Homework #14</div>
 
-            <div className={s2.hw}>
+            <div className = {s2.hw}>
                 <SuperDebouncedInput
-                    id={'hw14-super-debounced-input'}
-                    value={find}
-                    onChangeText={onChangeText}
-                    onDebouncedChange={sendQuery}
+                    id = {'hw14-super-debounced-input'}
+                    value = {find}
+                    onChangeText = {(e) => onChangeText(e)}
+                    onDebouncedChange = {sendQuery}
                 />
 
-                <div id={'hw14-loading'} className={s.loading}>
-                    {isLoading ? '...ищем' : <br/>}
+                <div id = {'hw14-loading'} className = {s.loading}>
+                    {isLoading ? '...ищем' : <br />}
                 </div>
 
                 {mappedTechs}
