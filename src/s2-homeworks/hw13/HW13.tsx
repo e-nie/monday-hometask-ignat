@@ -19,6 +19,7 @@ const HW13 = () => {
     const [text, setText] = useState('')
     const [info, setInfo] = useState('')
     const [image, setImage] = useState('')
+    const [isLoading, setIsLoading] = useState(false)
 
     const send = (x?: boolean | null) => () => {
         const url =
@@ -30,6 +31,7 @@ const HW13 = () => {
         setImage('')
         setText('')
         setInfo('...loading')
+        setIsLoading(true)
 
         axios
             .post(url, {success: x})
@@ -37,71 +39,91 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
+                setText(res.data.errorText)
+                setInfo(res.data.info)
 
             })
             .catch((e) => {
                 // дописать
-
+                if (e.response.status === 400) {
+                    setCode('Code 400!')
+                    setImage(error400)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+                } else if (e.response && e.response.status === 500) {
+                    setCode('Code 500!')
+                    setImage(error500)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+                } else {
+                    setImage(errorUnknown)
+                    setText('Network Error')
+                    setInfo('Axios Error')
+                }
             })
+            .finally(() => {
+                setIsLoading(false)
+            })
+
     }
 
     return (
-        <div id={'hw13'}>
-            <div className={s2.hwTitle}>Homework #13</div>
+        <div id = {'hw13'}>
+            <div className = {s2.hwTitle}>Homework #13</div>
 
-            <div className={s2.hw}>
-                <div className={s.buttonsContainer}>
+            <div className = {s2.hw}>
+                <div className = {s.buttonsContainer}>
                     <SuperButton
-                        id={'hw13-send-true'}
-                        onClick={send(true)}
-                        xType={'secondary'}
+                        id = {'hw13-send-true'}
+                        onClick = {send(true)}
+                        xType = {'secondary'}
                         // дописать
-
+                        disabled = {isLoading}
                     >
                         Send true
                     </SuperButton>
                     <SuperButton
-                        id={'hw13-send-false'}
-                        onClick={send(false)}
-                        xType={'secondary'}
+                        id = {'hw13-send-false'}
+                        onClick = {send(false)}
+                        xType = {'secondary'}
                         // дописать
-
+                        disabled = {isLoading}
                     >
                         Send false
                     </SuperButton>
                     <SuperButton
-                        id={'hw13-send-undefined'}
-                        onClick={send(undefined)}
-                        xType={'secondary'}
+                        id = {'hw13-send-undefined'}
+                        onClick = {send(undefined)}
+                        xType = {'secondary'}
                         // дописать
-
+                        disabled = {isLoading}
                     >
                         Send undefined
                     </SuperButton>
                     <SuperButton
-                        id={'hw13-send-null'}
-                        onClick={send(null)} // имитация запроса на не корректный адрес
-                        xType={'secondary'}
+                        id = {'hw13-send-null'}
+                        onClick = {send(null)} // имитация запроса на не корректный адрес
+                        xType = {'secondary'}
                         // дописать
-
+                        disabled = {isLoading}
                     >
                         Send null
                     </SuperButton>
                 </div>
 
-                <div className={s.responseContainer}>
-                    <div className={s.imageContainer}>
-                        {image && <img src={image} className={s.image} alt="status"/>}
+                <div className = {s.responseContainer}>
+                    <div className = {s.imageContainer}>
+                        {image && <img src = {image} className = {s.image} alt = "status" />}
                     </div>
 
-                    <div className={s.textContainer}>
-                        <div id={'hw13-code'} className={s.code}>
+                    <div className = {s.textContainer}>
+                        <div id = {'hw13-code'} className = {s.code}>
                             {code}
                         </div>
-                        <div id={'hw13-text'} className={s.text}>
+                        <div id = {'hw13-text'} className = {s.text}>
                             {text}
                         </div>
-                        <div id={'hw13-info'} className={s.info}>
+                        <div id = {'hw13-info'} className = {s.info}>
                             {info}
                         </div>
                     </div>
