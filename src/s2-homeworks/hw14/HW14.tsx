@@ -40,8 +40,9 @@ const HW14 = () => {
             .then((res) => {
                 // делает студент
                 // сохранить пришедшие данные
-                if (res && res.data && res.data.techs)
+                if (res){
                     setTechs(res.data.techs)
+            }
                 //завершаем загрузку
                 setLoading(false)
             })
@@ -55,7 +56,7 @@ const HW14 = () => {
         setSearchParams(
             {find: value}
         )
-        sendQuery(value)
+
     }
 
 
@@ -79,7 +80,7 @@ const HW14 = () => {
                 <SuperDebouncedInput
                     id = {'hw14-super-debounced-input'}
                     value = {find}
-                    onChangeText = {(e) => onChangeText(e)}
+                    onChangeText = {onChangeText}
                     onDebouncedChange = {sendQuery}
                 />
 
