@@ -16,10 +16,13 @@
 
 .row {
     display: flex;
+    width: 606px;
 }
 
 .rowHeader {
     display: flex;
+    margin-top: 36px;
+    width: 606px;
 }
 
 .loading {
