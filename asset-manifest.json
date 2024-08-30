@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/monday-hometask-ignat/static/css/main.acbf0f0f.css",
-    "main.js": "/monday-hometask-ignat/static/js/main.3fbf74ae.js",
+    "main.css": "/monday-hometask-ignat/static/css/main.6bd2ab4f.css",
+    "main.js": "/monday-hometask-ignat/static/js/main.6ad8c05b.js",
     "static/js/787.66cb4309.chunk.js": "/monday-hometask-ignat/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/monday-hometask-ignat/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/200.svg": "/monday-hometask-ignat/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
@@ -9,17 +9,20 @@
     "static/media/500.svg": "/monday-hometask-ignat/static/media/500.adbc5f265f6f3c1fb9c5633ffe365afa.svg",
     "static/media/400.svg": "/monday-hometask-ignat/static/media/400.8baa1b795048b6fa13ff8d30800aa1b1.svg",
     "static/media/404.svg": "/monday-hometask-ignat/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
+    "static/media/sort-none.svg": "/monday-hometask-ignat/static/media/sort-none.74ebb836b537d2b255c50af8412914a1.svg",
     "static/media/closeOutline.svg": "/monday-hometask-ignat/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
     "static/media/editIcon.svg": "/monday-hometask-ignat/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
     "index.html": "/monday-hometask-ignat/index.html",
     "static/media/checked.svg": "/monday-hometask-ignat/static/media/checked.b75ca55e8759862b4083.svg",
+    "static/media/arrow-up.svg": "/monday-hometask-ignat/static/media/arrow-up.089f4c9c4ff9b10037344b97d29a18a3.svg",
     "static/media/burger.svg": "/monday-hometask-ignat/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.acbf0f0f.css.map": "/monday-hometask-ignat/static/css/main.acbf0f0f.css.map",
-    "main.3fbf74ae.js.map": "/monday-hometask-ignat/static/js/main.3fbf74ae.js.map",
+    "static/media/arrow-down.svg": "/monday-hometask-ignat/static/media/arrow-down.c5113e84a1fe44979c1bb7cf1aaee622.svg",
+    "main.6bd2ab4f.css.map": "/monday-hometask-ignat/static/css/main.6bd2ab4f.css.map",
+    "main.6ad8c05b.js.map": "/monday-hometask-ignat/static/js/main.6ad8c05b.js.map",
     "787.66cb4309.chunk.js.map": "/monday-hometask-ignat/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.acbf0f0f.css",
-    "static/js/main.3fbf74ae.js"
+    "static/css/main.6bd2ab4f.css",
+    "static/js/main.6ad8c05b.js"
   ]
 }
