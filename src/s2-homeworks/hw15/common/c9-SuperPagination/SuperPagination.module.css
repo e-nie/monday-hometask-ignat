@@ -52,8 +52,8 @@
     /*background-color: rgb(0, 0, 0, 0.8); !* Adjust background color as per design *!*/
 }
 
-.pagination.pagination-select::selection {
-    background-color: rgb(0, 102, 204);
+.Mui-selected {
+    background-color: rgb(0, 102, 204)!important;
 }
 
 .text1 {
